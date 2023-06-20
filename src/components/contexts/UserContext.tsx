@@ -13,17 +13,15 @@ type AuthState = {
 };
 
 const AuthReducer = (state: AuthState, action: AuthActions): AuthState => {
-  switch (action.type) {
-    case "SIGN_IN":
-      return {
-        state: 'SIGNED_IN',
-        currentUser: action.payload.user,
-      };
-      break
-    case "SIGN_OUT":
-      return {
-        state: 'SIGNED_OUT',
-      }
+  if (action.type === "SIGN_IN") {
+    return {
+      state: 'SIGNED_IN',
+      currentUser: action.payload.user,
+    };
+  } else if (action.type === "SIGN_OUT") {
+    return {
+      state: 'SIGNED_OUT',
+    }
   }
 }
 

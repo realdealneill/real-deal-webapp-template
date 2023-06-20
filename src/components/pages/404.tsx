@@ -3,7 +3,7 @@ import {Head} from "~/components/shared/Head";
 function Page404() {
   return (
     <>
-      <Head title={'The page is not found'}></Head>
+      <Head title="The page is not found" />
       <div className="hero min-h-screen bg-gray-800">
         <div className="text-center hero-content text-3xl font-bold">
           <div>

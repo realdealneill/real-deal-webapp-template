@@ -21,7 +21,7 @@ This starter uses following libraries:
 ## Set up
 
 ```shell
-mv .env.local.example .env.local
+mv .env.local .env.local
 yarn
 yarn dev
 ```
